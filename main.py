@@ -13,7 +13,7 @@ for loja in range(167,185,+1):
         try:
             for balcao in range(1,8,+1):
                 try:
-                    ssh.connect(hostname='192.168.{}.{}'.format(loja, balcao), username='caixa', password='*****')
+                    ssh.connect(hostname='192.168.{}.{}'.format(loja, balcao), username='caixa', password='*****', timeout=8)
                     ssh.exec_command('cd')
                     ssh.exec_command('mkdir teste{}'.format(balcao))
                     print(balcao)

@@ -32,4 +32,4 @@ def msgInd(loja):
 
 
     ssh.exec_command('export DISPLAY=:0.0 ; firefox ~/msg/msg.html')
-
+    ssh.close()

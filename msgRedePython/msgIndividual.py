@@ -6,10 +6,11 @@ def msgInd(loja):
     maq = input('Informe o último campo do IP:\n')
     host = '192.168.{}.{}'.format(loja, maq)
     if(maq < 10 ):
-        user = 'balcao'
+        user = 'operador'
+        password = '68594'
     else:
-        user = 'caixa'
-    password = 'pmp'
+        user = 'vendedor'
+        password = '68594'
     backGround = "https://pmpfarmacias.com.br/wp-content/uploads/2021/03/empty-save-texture-room-light.jpg"
     idPagina = 'corpo'
     logo = "http://links.precomaispopular.com.br/logo_pmp.png"

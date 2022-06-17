@@ -10,8 +10,8 @@ def msgTodaRede():
     ssh = paramiko.SSHClient()
     ssh.load_system_host_keys()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-    user = 'balcao'
-    password = 'pmp'
+    user = 'operador'
+    password = '9658213'
     mensagem = input('Informe a mensagem:\n')
 
     for loja in range(70,202,+1):
@@ -36,6 +36,5 @@ def msgTodaRede():
                         print('Host inacessível')
             except paramiko.ssh_exception.NoValidConnectionsError as e:
                 print('Host inacessível')
-            except:
-                print('Host inacessível')
+            
     ssh.close()

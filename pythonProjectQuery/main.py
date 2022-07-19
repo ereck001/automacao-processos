@@ -4,13 +4,13 @@ import pyodbc
 # Script de automatização de query para os servidores
 
 server = ''
-database = 'LOJA'
-username = 'sa'
-password = 'mkt$Admin'
+database = 'EXAMPLEDB'
+username = 'eser'
+password = 'password'
 
 
 
-for i in range(70,202):
+for i in range(1,200):
     server= '192.168.{}.253'.format(i)
     print('Executando na loja {} '.format(i))
     try:

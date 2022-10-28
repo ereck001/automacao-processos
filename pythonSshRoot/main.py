@@ -27,7 +27,8 @@ def sshRoot(command):
     stdin, stdout, stderr = client.exec_command(command=command, get_pty=True)
     print("Comando enviado")
     time.sleep(0.5)
-    stdin.write("pmp\n")
+    #envio da senha
+    stdin.write("senha\n")
     print("Senha enviada")
     stdin.flush()
     print("Executando o comando...")
